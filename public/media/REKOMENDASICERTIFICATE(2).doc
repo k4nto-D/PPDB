@@ -1,0 +1,130 @@
+{\rtf1\ansi\deff4\adeflang1025
+{\fonttbl{\f0\froman\fprq2\fcharset0 Times New Roman;}{\f1\froman\fprq2\fcharset2 Symbol;}{\f2\fswiss\fprq2\fcharset0 Arial;}{\f3\froman\fprq2\fcharset0 Liberation Serif{\*\falt Times New Roman};}{\f4\froman\fprq2\fcharset0 Calibri;}{\f5\fswiss\fprq2\fcharset0 Liberation Sans{\*\falt Arial};}{\f6\fnil\fprq2\fcharset0 Noto Sans CJK SC;}{\f7\fnil\fprq2\fcharset0 Calibri;}{\f8\fnil\fprq2\fcharset0 Lohit Devanagari;}{\f9\fnil\fprq0\fcharset128 Lohit Devanagari;}{\f10\fnil\fprq2\fcharset0 ;}}
+{\colortbl;\red0\green0\blue0;\red0\green0\blue255;\red0\green255\blue255;\red0\green255\blue0;\red255\green0\blue255;\red255\green0\blue0;\red255\green255\blue0;\red255\green255\blue255;\red0\green0\blue128;\red0\green128\blue128;\red0\green128\blue0;\red128\green0\blue128;\red128\green0\blue0;\red128\green128\blue0;\red128\green128\blue128;\red192\green192\blue192;\red237\green125\blue49;}
+{\stylesheet{\s0\snext0\rtlch\af10\afs22\alang1025 \ltrch\lang1033\langfe1033\hich\af4\loch\sl259\slmult1\ql\widctlpar\sb0\sa160\ltrpar\hyphpar0\cf0\f4\fs22\lang1033\kerning0\dbch\af7\langfe1033 Normal;}
+{\*\cs15\snext15 Default Paragraph Font;}
+{\*\cs16\sbasedon15\snext16 Header Char;}
+{\*\cs17\snext17 ListLabel 1;}
+{\*\cs18\snext18 ListLabel 2;}
+{\*\cs19\snext19 ListLabel 3;}
+{\*\cs20\snext20 ListLabel 4;}
+{\*\cs21\snext21 ListLabel 5;}
+{\*\cs22\snext22 ListLabel 6;}
+{\*\cs23\snext23 ListLabel 7;}
+{\*\cs24\snext24 ListLabel 8;}
+{\*\cs25\snext25 ListLabel 9;}
+{\s26\sbasedon0\snext27\rtlch\af8\afs28 \ltrch\hich\af5\loch\sl259\slmult1\ql\widctlpar\sb240\sa120\keepn\ltrpar\f5\fs28\dbch\af6 Heading;}
+{\s27\sbasedon0\snext27\loch\sl276\slmult1\ql\widctlpar\sb0\sa140\ltrpar Text Body;}
+{\s28\sbasedon27\snext28\rtlch\af9 \ltrch\loch\sl276\slmult1\ql\widctlpar\sb0\sa140\ltrpar List;}
+{\s29\sbasedon0\snext29\rtlch\af9\afs24\ai \ltrch\loch\sl259\slmult1\ql\widctlpar\sb120\sa120\noline\ltrpar\fs24\i Caption;}
+{\s30\sbasedon0\snext30\rtlch\af9\alang255 \ltrch\lang255\langfe255\loch\sl259\slmult1\ql\widctlpar\sb0\sa160\noline\ltrpar\lang255\dbch\langfe255 Index;}
+{\s31\sbasedon0\snext31\loch\sl259\slmult1\ql\widctlpar\li720\ri0\lin720\rin0\fi0\sb0\sa160\contextualspace\ltrpar List Paragraph;}
+{\s32\sbasedon0\snext32\loch\sl259\slmult1\ql\widctlpar\sb0\sa160\ltrpar Header and Footer;}
+{\s33\sbasedon0\snext33\loch\sl240\slmult1\ql\widctlpar\tqc\tx4680\tqr\tx9360\sb0\sa0\ltrpar Header;}
+{\s34\sbasedon0\snext34\loch\sl259\slmult1\ql\widctlpar\sb0\sa160\ltrpar Frame Contents;}
+}{\*\generator LibreOffice/7.3.3.2$Linux_X86_64 LibreOffice_project/30$Build-2}{\info{\author Hp}{\creatim\yr2022\mo5\dy23\hr11\min37}{\revtim\yr2022\mo5\dy31\hr17\min30}{\printim\yr0\mo0\dy0\hr0\min0}}{\*\userprops{\propname AppVersion}\proptype30{\staticval 16.0000}}\deftab720
+\hyphauto1\viewscale96
+{\*\pgdsctbl
+{\pgdsc0\pgdscuse451\pgwsxn12240\pghsxn20160\marglsxn1440\margrsxn1440\margtsxn1440\margbsxn1440\pgdscnxt0 Default Page Style;}}
+\formshade\paperh20160\paperw12240\margl1440\margr1440\margt1440\margb1440\sectd\sbknone\pgndec\sftnnar\saftnnrlc\sectunlocked1\pgwsxn12240\pghsxn20160\marglsxn1440\margrsxn1440\margtsxn1440\margbsxn1440\ftnbj\ftnstart1\ftnrstcont\ftnnar\aenddoc\aftnrstcont\aftnstart1\aftnnrlc\htmautsp
+{\*\ftnsep\chftnsep}\pgndec\pard\plain \s0\rtlch\af10\afs22\alang1025 \ltrch\lang1033\langfe1033\hich\af4\loch\sl259\slmult1\ql\widctlpar\sb0\sa160\ltrpar\hyphpar0\cf0\f4\fs22\lang1033\kerning0\dbch\af7\langfe1033\loch
+
+\par \pard\plain \s0\rtlch\af10\afs22\alang1025 \ltrch\lang1033\langfe1033\hich\af4\loch\sl259\slmult1\ql\widctlpar\sb0\sa160\ltrpar\hyphpar0\cf0\f4\fs22\lang1033\kerning0\dbch\af7\langfe1033\tx2536\sb0\sa160\loch
+{\field{\*\fldinst SHAPE }{\fldrslt{\shp{\*\shpinst\shpleft47\shptop66\shpright9907\shpbottom6138\shpwr2\shpbxignore\shpbyignore\shpz0{\sp{\sn shapeType}{\sv 1}}{\sp{\sn posrelh}{\sv 3}}{\sp{\sn pVerticies}{\sv 8;4;(0,0);(-2147483645,0);(-2147483645,-2147483646);(0,-2147483646)}}{\sp{\sn pSegmentInfo}{\sv 2;4;16384;3;24577;32768}}{\sp{\sn lineJoinStyle}{\sv 2}}{\sp{\sn lineColor}{\sv 0}}{\sp{\sn lineBackColor}{\sv 16777215}}{\sp{\sn geoTop}{\sv 0}}{\sp{\sn geoRight}{\sv 0}}{\sp{\sn geoLeft}{\sv 0}}{\sp{\sn geoBottom}{\sv 0}}{\sp{\sn fshadowObscured}{\sv 1}}{\sp{\sn fillType}{\sv 0}}{\sp{\sn fillColor}{\sv 16777215}}{\sp{\sn fillBackColor}{\sv 0}}{\sp{\sn fNoFillHitTest}{\sv 1}}{\sp{\sn dyTextTop}{\sv 45720}}{\sp{\sn dyTextBottom}{\sv 45720}}{\sp{\sn dxTextRight}{\sv 91440}}{\sp{\sn dxTextLeft}{\sv 91440}}{\sp{\sn anchorText}{\sv 0}}{\sp{\sn wzDescription}{\sv }}{\sp{\sn wzName}{\sv Text Box 9}}{\shptxt\s33\loch\sl240\slmult1\ql\widctlpar\tqc\tx4680\tqr\tx9360\sb0\sa0\ltrpar{\rtlch\afs20\ab \ltrch\loch\fs20\b
+                    }{\rtlch\afs20\ab \ltrch\loch\fs20\b\loch
+SMK YAPPIKA LEGOK}
+\par \s33\loch\sl240\slmult1\ql\widctlpar\tqc\tx4680\tqr\tx9360\sb0\sa0\ltrpar{
+                  }{\rtlch\afs16 \ltrch\loch\fs16\loch
+Jl. Logam Babakan Legok, Tangerang}
+\par \s34\loch\sl259\slmult1\ql\widctlpar\sb0\sa160\ltrpar{
+  }
+\par \s34\loch\sl259\slmult1\ql\widctlpar\sb0\sa160\ltrpar\loch
+
+\par \s34\loch\sl259\slmult1\ql\widctlpar\sb0\sa160\ltrpar{\loch
+\tab NAMA LENGKAP\tab \tab \tab : }{\loch
+Hulk}
+\par \s34\loch\sl259\slmult1\ql\widctlpar\sb0\sa160\ltrpar\li0\ri0\lin0\rin0\fi720{\loch
+ASAL SEKOLAH\tab \tab \tab \tab : }{\loch
+SMP Tgsl}
+\par \s34\loch\sl259\slmult1\ql\widctlpar\sb0\sa160\ltrpar{\loch
+\tab NO TEST\tab \tab \tab \tab : }{\loch
+A0001}
+\par \s34\loch\sl259\slmult1\ql\widctlpar\sb0\sa160\ltrpar{\loch
+\tab JURSAN\tab  YANG DIPILIH\tab \tab \tab : }{\loch
+}
+\par \s34\loch\sl259\slmult1\ql\widctlpar\sb0\sa160\ltrpar\li0\ri0\lin0\rin0\fi720{\loch
+JURUSAN YANG DI REKOMENDASIKAN\tab : }{\loch
+}
+\par \s34\loch\sl259\slmult1\ql\widctlpar\sb0\sa160\ltrpar\li0\ri0\lin0\rin0\fi720\loch
+
+\par \s34\loch\sl259\slmult1\ql\widctlpar\sb0\sa160\ltrpar\li0\ri0\lin0\rin0\fi720\sb0\sa0{\rtlch\afs16\ai \ltrch\loch\fs16\i\loch
+SILAHKAN CETAK ATAU DOWNLOAD HASIL TEST PENERIMAAN PESERTA DIDIK BARU}
+\par \s34\loch\sl259\slmult1\ql\widctlpar\sb0\sa160\ltrpar\li0\ri0\lin0\rin0\fi720\sb0\sa0{\rtlch\afs16\ai \ltrch\loch\fs16\i\loch
+TUNJUKAN BUKTI TEST INI UNTUK MEMPEROLEH FORMULIR PENDAFTARAN DI SMK YAPPIKA LEGOK}
+\par \pard}}}}}{\shp{\*\shpinst\shpwr4\shpwrk0\shpbypara\shpbyignore\shptop145\shpbottom645\shpbxcolumn\shpbxignore\shpleft329\shpright829{\sp{\sn shapeType}{\sv 75}}{\sp{\sn wzDescription}{\sv }}{\sp{\sn wzName}{\sv }}{\sp{\sn pWrapPolygonVertices}{\sv 8;9;(6452,0);(-18,6472);(-18,12946);(1276,20709);(19417,20709);(20710,12946);(20710,6472);(14241,0);(6452,0)}}{\sp{\sn pib}{\sv {\pict\picscalex100\picscaley100\piccropl0\piccropr0\piccropt0\piccropb0\picw76\pich76\picwgoal497\pichgoal497\pngblip
+89504e470d0a1a0a0000000d494844520000004c0000004c0806000000c797512b000000017352474200aece1ce90000000467414d410000b18f0bfc61050000
+000970485973000021d5000021d501049cb49d00000f8349444154785eed5c6b7055d515c669d5b6d696a724b9e4c5cbf07e3f4544a05340790446910a5aa505
+b4b62a56998205a7563a456c4750f9612d3eead42a44798c53c491d14a3a8222338abca42a81f04609813c48b2bbd73aebdb5967df7373134250846fe69bbdf6
+da6befbbbf8f7d4ecebd37a1d1055cc0f9879d8d534dab563123dd0ba80117155cdccc10c93031edbbc1d0058430a45faf129805a4a707a6c562a9a552760104
+67d4a9536c144e1840319927e5e7351aeb5375f0c6611cc330e2c001fd792c5dfa4d9b366d2573cf2f2cefd28e8d393078301b02a39897541b46a4d345b8fdf6
+db719956c932e707600c00939c6196300af7313a6100c54459eedb8bb4b4b4b76108411b14a2350f97208c434c2420178bb57c5596ff760166946d7e8705874e
+14c5a17ef338a360205ac2ce9d3bddb8bcccb702df81118492b756579b04832288cb0e64b3e81255fd356bd6f09ae8dbd7ba2878c97314370c1e1818f0fd162c
+cc3705a6edb127ca1fc3c961a3bc98e9dddb3233d3b91f8ba59d92973fb700e1a6b28205711fa72ac9e9226a43a20cd37d6a091515152e27dbf8e6c3de84af83
+68c2bebe9d0383a24cd2396fdc37a626c2dc512347f26ba29f9292d241b6f5cdc47badb358ecd13b7fce1b770624322c116dad6f084c703915bb9cd410a64e9d
+8a9a6fe6331bc412aa4e1e0f897771542e81916c803201f48dc2386a315e5e5ece7b419d6cf3eb47bb36d99f4124418bae0fb5781d735fb53c06d3a4053333d2
+794f18b3b78b35b2edaf077c3a2c4f157ec61b8b12cec4294a709a342b766fe316a2c994f1e37343e684cc5326718d10392261f3e6cd2e2fdb3fabb818020945
+4ffc3124dab116061d5fbad8ecebdd87635359694a37fec754559c6261d3a74f37a5a5a54e3809eed7b7af193dfa7a9743dec56228721cdbdcba75eb78af3058
+74343c1eecd783c5ed490d8ebb169f94d6c0d28d6f724ca8b28f1c25eface27e557919b7256f2de79684969595715b698d2491f3e6cde3791b376e64e1ad5b67
+87cc8161300a39f4698c909d9de9c64556c30027c62ae517a69899e824f9f94b9b9bd20def98c2ccb6a6a260bb39307a44789c287358a4888760e4faf5edc366
+9291d4f70d73b5e87beb10e88702fa22efcca155abb4f9ce2c8b3d99d961919a3049b796a7bed8668edc3fc9541effca9cf8d73fa3e758fa8028678022e7ac19
+070e1c08d5817e5f73c2f8f1bc3e0c4e6ddebca7c8ad1f76366ec9428a9ff933bf8013e95389d6fd638fcce1a7fde2579e0e8f272040a2f4c9401f633efd7b1d
+1b2144ce8d494c248c1a3512b5f57b66836842c5c1dd8128ca45bcf78b2281dac3d36e09726a3d00b558136001240ead250923918f3db6d0e4e7e73bd1447a5b
+545a52c2754f3df9649c511c4b4e93727469139013f9b5479f6e9d4a0263aa4547520c08c5d2569d2a37c5cf3f6a0aae48abaeb1f451d0aa55e438846ae1478f
+1e75a28804c45447a6e1be76cb2d93b9a5797a2deecb9a9a595919bc1ed7f078eaeb6247cde08d5bd195a527790127469b539b9c6de94b0d7fbcb6801008acaa
+aa7239103f3d7d03d834897d8312c6d212366cd8e0c6c59648849ead0edd36324e2c9b11659247c289657f97faf0e55b5b408816a3b977efde38a3a20c484618
+caade43efdf453de03f2e24f355ee8dc9ec5ecebd38b0bb5c04883c88428f32457f4f4e3e1bcc7dac017acfb14d34dde374cb3b8b8b8da086da4e45cacfa3e09
+d9d9593c1e8ba596b1595a041d7b272ccaa828aa1344f309fbc7fdc4e500bf9f0c510242426d8b3abfa5b19c9cf6bc1f5cca894c437d9479d40750d76869ef1c
+27a4d62611139caeaa1345ae6f77cbebd617b8914308364f2d3dc0725fc65f7cf11f8101961f7df411e708d4a20e737d83fc1aac4990bae0b1830456167d1936
+a0b614e3d8a8cb5342637501e6140ee8ca2d6d74f7ee2f0201b2e94d9b36711f39c4dc17918b163deec689eddab50d9b44f40cd17d57276344bc2b60b3085a60
+e8e4e8d8a71a2bf9779e29ecd8de1cc8fda91bab0bb04e5559a92959b7da1c9e712b6ff0d8b163a19bfbd6ad5bb91e42204e538f830b1f7dd4bcfcf2cb090dd1
+74e3d2ea9fce6257a346af0fe9cd1b2660f3b5a635076f9ce95386d0d88f9bf39a89c0f74c186fdba2e7ec739bcc8520aa414cedce1d3bccbe7dfbe2ccfaf8e3
+8fedb3d79438c144baa44fd9471cf4a36a5cce33928031b12b006d92a00560f335fe54a4f6f216d1e3c24488aac51ab44966c4492050abc790d3d426bcfffefb
+71637a9c19912750df5a14fe0a0f1b26b88d471910913b74ebe8e831e947a1e007c1f88c414dcc8cab1a9bbc2b9b86e663d320ead027508bba8c8c7467a09e4b
+7141414175bdaaf1eb39a7fa04d4884dd5f8b079ba13874d33230cd2b92fff70a739b6609e2959fb4664eda1dc5c5ed307c6670c6acc662cee670d53f3b4086a
+b94e0ca31c01635184502299d9ab678f20af88f144c46bd05a625318b4517a14e04dfbe2755fc5fce860ef118460ace6fb1680f930028615766969ca56f662be
+bde43a270c278c364f397adfa845fb066cd9b225106b4988aa43eccfe59c7d1ddcf0c59e784044e571f58811679cdccf748e2e2fd54f862a6b30af61199cb06a
+9251d8f482bbaf3673463567a34036cc72fab4697142759f0cd363858585a67bf76e5c03d3f5b89fa39fd0e88b3df1f89c6ede22d819a0cdf18db20cbed90e1e
+5051930c6c98ccc709632ac348c0d4097dcdc3b92dab6b6ccb6396e3c68d75e6a11e6314fb8681da143f469fe6133026f6c4a359b3666910eccc893029196b03
+ac0bb3f892b4b9237765bb4bf2f86bfd9d18d441101e2641ca69d1fa928499a843cc7da18b651d02e59a3469f263b1271a4e745949bc59d407751e6311f1a151
+c1d7f73e5017320cf32d21046270ca2094a04522ef722ae656198a9ccbab31cad5e977343ebf2c78334dd002e218659aa61a8f02c661c4333dc386410c84c158
+f409104afdacacea6f8288be093a87bea6cef3da92135b122325e5872d20b22ea6d4142782ab11fe6ccc5366877d92dfb66dbb79f7edcd36decef44513908330
+02c65dadb43aefe6a14f26aa3944ac65edb82470250920e0e45b2be244d59555a525bc812854161d0deac4e0ee573eec4c22e3a81d353478334d24b1bd7b079f
+d9a18f3122411be3c79ac8632ef21fd87704a8173b920362098823a94f92d7df939ac5f393a17cfb87a1356e1abdc4f4b0c60de8329f5b3211a2c68c19cd73b4
+199a30001f5dbb3c998158b588350988c58ee4c8cec8988c0750fff2d2e2e27214a36fdbbac0ad218421100538c1118611e98d39626d14fadc82de1a94e3d7b0
+f9b4b4b4816247ed409bde9b9e618a5ffa6bd808a2df4f90a35f05381d1c7be44f66f6ecdff1878380130ad1d21e3c78d0cc9a35cb19f3e08373780cb55173e2
+62e96fdaf48169d3a635e7c486da03a20949cdaa81c0a11baf0bf593010668b12e27adfbd6c812a03e72a8433f2ad67dcca7d7121b6a0f7b245f84c08406f946
+468ced1f7855386f591b4044544bd49fd5c3543dae730b162c70f351a36b9127509b9292728dd85037b0c0cb9a992feff9759ce81a99e404d6065a08a8cda1f1
+d5ab57c5d7081153bb72e5cad0b8ab93f5285eb26489cb89fcba83055af1045fb463d429ab21575b400848983cf966279244cf9c3933da082119e5d3afe3d8ae
+47c06b8afcba23164b7b1522e30c48c424e351881a87112089d9baf593201612203a542bedf2e5cb220d035dbd322c3535f51e917f7a20030e4f9964f6e404bf
+219d88f46679f7f79a995dcfcb1f33d4407c7e46881b13b028f917771461cf3ebbd4cc9dfbfb90e0a8fac0a415ccbcbce566ca14f97d0b4b37d772d6ac07ccc8
+1123b82fb24f1ff8a29610777aa4ffdcd02ee683cce05386132bfa9931c37b55d746cd915cd4879500c4686188d187708c710eb11d23c3e8f7c070ba7273c785
+6ad11260b6c83e7d6467a5f39f1613208aa90c59dda1fa2319509b1037a706fa20111083168650ebc7dcb7bc69e2443364c8356c545e5e1eb73d7a740bd5706b
+e712288ec5525e12d9f50309f96afe1da6b0734e42d1306afcf08e66c5e29bcd8c1bac691857e6ba9ca6cd1bf98aae7ccb7fedc10b1e78f7efdf6fdab76f67c6
+dab744100ab279da34e4245e25a78a78efbdf798e1c38785e74b4b7f003170e0008e456efd0161042d52b70bef1b113a616b9e98c0adabd773742c2d0ca3fec9
+d5cbcd91234758147d9f58545414120bc21c88478e4c9a38f1c6504bd4356809305ee4d61f2306f63cc9a22c5854026ac3de5cd8d7944a1c55abcde3bf66d366
+5a3a51ea14f90c19257530eceebb7fc3edecd9b34366a196eaa8250473d39689dc33031251bcec859028a627148695ace86d66ff6ab4ebcfe9d7295447ac3a59
+640ed91b31f75ba472cb282936274f06bfd04762eeffed7dfcbe927ed18dbf0917b14ebcc4ebdf7dd7ac5fbfdee4e707c4c9c2b8334cda0e3957baf79e22f3cc
+81455973086c9236ca8bcbc524e29b7f19e462a2abb3dc73456b5379641f1b57909a660a73ba9ba2050fb361faf410060ce8c78625129f6f8d7ae8a187ccd8b1
+63f80197fa81612b0253553dd62070ae210cbbba67d76ac394e844d42611dffbdbf52ea64b3564b2a6e4b5614ea8a615497f544a2769c28409c1a9a2d365b976
+ed5a6ee7cf7f24bc86673681d64a4b4b2d1799671624a4f270a129b8d413a9a98c8041332775e4f6d86b83cc274b87b83c189a2f24214ea8906236852fb97c67
+90364be7dcf7906a3e482776f1e2c50d73ba008821687135714aee6033694c705996afea65eeb86d3cc7c7f2fa9a07ee9c68268cbe96fbf42e419b0d815aecd0
+a1d706465933c68e19536d1a1b28b47ddce4b5497a3d6a09181379671e733bb7653104084b48ef929b71d3556cd8fe57ae6183e6fe6200b78fddd5cbdc3f6d24
+c7c33aa498fffde80a9ecbe2ecbf3e09bca64b168f11f9a62e5cbc68119b841b3d3d42500c23405a23b161a90522af6140e22bf67d96d098641cd4bf379b3376
+c4406e4b57049765d74e39e697b923d994a196246668a774eeb3e0f456ccea13157f496664504dd81850f7a966d5aae0148aac86038413b4114c6d5e122377c4
+524daf6e1dccd2d9fde3c65675cb31833a65980e6d33dd298311302788f3dd890a194294793a879880f54456c3216ffcd52c8a50a3297530cf1fdf6d8953e6d3
+19e8e542355e9ee7a898c06ba4c72a4556c3824411b4c838c2844466f979d5a7cb3024d832d44618e1531baa999999c17fb840b1c86978405852d3ea4a31ad6f
+d71c1634ac63f05ffbc96948688226d712a55ecfa198809cc86978bcd14efd6e3f0b0d3e33ab17c92ccb3e9dda709f0465da9b388442b44fdf949a08c3288ec5
+d2cecee5089038fa00f05cc3ae5dbbf8f4898cb3077dcf712744f7eb43bb164e8d7f7a5c5eee5fd4d7975f5cbdd421e6d652649c3df0af452532292a8f5c4dc6
+aa318873a225ae89bac69f8f58787efd0f771770cea051a3ff03c02ff48f202d83360000000049454e44ae426082}}}}}
+
+\par }

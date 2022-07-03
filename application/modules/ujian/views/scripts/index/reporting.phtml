@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="favicon.ico">
+    <title>PPDB - YAPPIKA</title>
+    <!-- Simple bar CSS -->
+    <link rel="stylesheet" href="<?= $this->baseUrl('css/simplebar.css'); ?>">
+    <!-- Fonts CSS -->
+    <link href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- Icons CSS -->
+    <link rel="stylesheet" href="<?= $this->baseUrl('css/feather.css'); ?>">
+    <!-- Date Range Picker CSS -->
+    <link rel="stylesheet" href="<?= $this->baseUrl('css/daterangepicker.css'); ?>">
+    <!-- App CSS -->
+    <link rel="stylesheet" href="<?= $this->baseUrl('css/app-light.css'); ?>" id="lightTheme">
+    <link rel="stylesheet" href="<?= $this->baseUrl('css/app-dark.css'); ?>" id="darkTheme" disabled>
+  </head>
+  <body class="light ">
+    <div class="wrapper vh-100">
+      <div class="row align-items-left h-25">
+        <form class="col-lg-10 col-md-4 col-10 mx-auto" action="" method="post">
+          <div class="mx-auto text-left my-4">
+            <img src="<?= $this->baseUrl('media/logosekolah.jpeg')?>" alt="SMK YAPPIKA" width="75" heigh="75" class="navbar-brand mx-auto mt-1 flex-fill text-left"></img>&#8287;&#8287;&#8287;&#8287;<br>
+            <h1 class="navbar-brand mx-auto mt-3 flex-fill text-left">SMK YAPPIKA LEGOK<br><small>Jl. Logam Babakan Legok, Tangerang</small></h1>
+          </div>
+          <div class="mx-auto text-center my-4">
+            <h1 class="my-5">SELAMAT ANDA LULUS TES</h1>
+            <hr>
+            <h5 class="my-1"><i>DENGAN NILAI :</i></h5><br>
+            <table class="table table-hover">
+                  <thead class="thead-dark">
+                    <tr>
+                      <th>Nama Jurusan</th>
+                      <th>Jawaban Benar</th>
+                      <th>Jawaban Salah</th>
+                      <th>Nilai</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <?php
+                      foreach ($this->reporting as $key) {
+                        echo "<tr>
+                                <th scope='col'><i class='fe fe-edit-3 fe-12 text-muted mr-2'></i>" . $key['list_jurusan'] . "</th>
+                                <td>" . $key['jwb_benar'] . "</td>
+                                <td>" . $key['jwb_salah'] . "</td>
+                                <td>" . $key['total_nilai'] . "</td>
+                              </tr>";
+                      }
+                    ?>
+                    
+                  </tbody>
+                </table>
+                <br><br>
+                <h5 class="my-1"><i>JURUSAN YANG ANDA PILIH :</i></h5>
+                <br>
+                <h1><b><?= $this->kejuruan_pic ?></b></h1>
+                <br><hr><br>
+                <h5 class="my-1"><i>ANDA DISARANKAN UNTUK MEMILIH JURUSAN :</i></h5>
+                <br>
+                <h1><b><u><?php 
+                          foreach($this->rekomendasi as $rc){
+                            echo $rc['kejuruan'] . ", ";
+                          } ?></u></b></h1><small>(Tidak Wajib)</small>
+                <br>
+          </div>
+          <button class="btn btn-lg btn-danger btn-block" type="submit" name="submit" value="next">Klik Untuk Melanjutkan</button>
+          <p class="mt-5 mb-3 text-muted text-center">© 2022</p>
+        </form>
+      </div>
+    </div>
+    <script src="<?= $this->baseUrl('js/jquery.min.js'); ?>"></script>
+    <script src="<?= $this->baseUrl('js/popper.min.js'); ?>"></script>
+    <script src="<?= $this->baseUrl('js/moment.min.js'); ?>"></script>
+    <script src="<?= $this->baseUrl('js/bootstrap.min.js'); ?>"></script>
+    <script src="<?= $this->baseUrl('js/simplebar.min.js'); ?>"></script>
+    <script src='<?= $this->baseUrl('js/daterangepicker.js'); ?>'></script>
+    <script src='<?= $this->baseUrl('js/jquery.stickOnScroll.js'); ?>'></script>
+    <script src="<?= $this->baseUrl('js/tinycolor-min.js'); ?>"></script>
+    <script src="<?= $this->baseUrl('js/config.js'); ?>"></script>
+    <script src="<?= $this->baseUrl('js/apps.js'); ?>"></script>
+  </body>
+</html>
+</body>
+</html>

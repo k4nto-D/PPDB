@@ -1,0 +1,398 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="favicon.ico">
+    <title>PPDB - YAPPIKA</title>
+    <!-- Simple bar CSS -->
+    <link rel="stylesheet" href="<?= $this->baseUrl('css/simplebar.css'); ?>">
+    <!-- Fonts CSS -->
+    <link href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- Icons CSS -->
+    <link rel="stylesheet" href="<?= $this->baseUrl('css/feather.css'); ?>">
+    <link rel="stylesheet" href="<?= $this->baseUrl('css/select2.css'); ?>">
+    <link rel="stylesheet" href="<?= $this->baseUrl('css/dropzone.css'); ?>">
+    <link rel="stylesheet" href="<?= $this->baseUrl('css/uppy.min.css'); ?>">
+    <link rel="stylesheet" href="<?= $this->baseUrl('css/jquery.steps.css'); ?>">
+    <link rel="stylesheet" href="<?= $this->baseUrl('css/jquery.timepicker.css'); ?>">
+    <link rel="stylesheet" href="<?= $this->baseUrl('css/quill.snow.css'); ?>">
+    <!-- Date Range Picker CSS -->
+    <link rel="stylesheet" href="<?= $this->baseUrl('css/daterangepicker.css'); ?>">
+    <!-- App CSS -->
+    <link rel="stylesheet" href="<?= $this->baseUrl('css/app-light.css'); ?>" id="lightTheme">
+    <link rel="stylesheet" href="<?= $this->baseUrl('css/app-dark.css'); ?>" id="darkTheme" disabled>
+  </head>
+  <body class="vertical  light  ">
+    <div class="wrapper">
+
+      <nav class="topnav navbar navbar-light">
+        <ul class="nav">
+          <li class="nav-item">
+            <a class="nav-link text-muted my-2" href="#" id="modeSwitcher" data-mode="light" title="DARK / LIGHT Mode">
+              <i class="fe fe-sun fe-16"></i>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <aside class="sidebar-left border-right bg-white shadow" id="leftSidebar" data-simplebar>
+        <a href="#" class="btn collapseSidebar toggle-btn d-lg-none text-muted ml-2 mt-3" data-toggle="toggle">
+          <i class="fe fe-x"><span class="sr-only"></span></i>
+        </a>
+        <nav class="vertnav navbar navbar-light">
+<!--* NAVBAR --->
+         <div class="w-100 mb-4 d-flex">
+            <img src="<?= $this->baseUrl('media/logosekolah.jpeg')?>" alt="SMK YAPPIKA" width="25" heigh="25" class="navbar-brand md-auto mt-2 flex-fill text-center">
+          </div>
+          <p class="navbar-brand mx-auto mt-2 flex-fill text-center">SMK YAPPIKA LEGOK</p>
+          <ul class="navbar-nav flex-fill w-100 mb-2">
+            <li class="nav-item dropdown">
+              <a href="<?= $this->baseUrl('../index/form')?>" data-toggle="collapse" aria-expanded="false" class="nav-link" >
+                <i class="fe fe-user-plus fe-16"></i>
+                <span class="ml-3 item-text">Registrasi</span>
+              </a>
+            </li>
+          </ul>
+          
+          
+          <ul class="navbar-nav flex-fill w-100 mb-2">
+          </ul>
+          <div class="btn-box w-100 mt-4 mb-1">
+            <form action="" method="post">
+              <button type="submit" class="btn mb-2 btn-primary btn-lg btn-block" name="submit" value="logout">
+                <span class="small">Keluar Dari Ujian</span>
+              </button>
+            </form>
+          </div>
+        </nav>
+      </aside> 
+      <main role="main" class="main-content">
+        <div class="container-fluid">
+          <div class="row justify-content-center">
+            <div class="col-12">
+              <h2 class="page-title text-center">SELAMAT DATANG CALON PESERTA DIDIK BARU </h2><hr>
+              <p class="text-muted">ISILAH BIODATA DENGAN BENAR</p>
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="card shadow mb-4">
+                    <div class="card-header">
+                      <strong class="card-title"></strong>
+                    </div>
+                    <div class="card-body">
+                      <form class="needs-validation" method="post" action="" novalidate>
+                        <div class="form-row">
+                          <div class="col-md-12 mb-3">
+                            <label for="validationCustom3">Nama Lengkap</label>
+                            <input name="nama" type="text" class="form-control" id="validationCustom3" required></input>
+                            <div class="valid-feedback"> Disetujui! </div>
+                          </div>
+                        </div> 
+                        <div class="form-group mb-3">
+                          <label for="address-wpalaceholder">Asal Sekolah</label>
+                            <input name="asalsekolah" type="text" id="address-wpalaceholder" class="form-control" required>
+                          <div class="valid-feedback"> Disetujui! </div>
+                          <div class="invalid-feedback"> Tidak boleh kosong </div>
+                        </div>
+                        <div class="form-row">
+                          <div class="col-md-8 mb-3">
+                            <label for="exampleInputEmail2">Alamat Email</label>
+                            <input name="email" type="email" class="form-control" id="exampleInputEmail2" aria-describedby="emailHelp1" required>
+                            <div class="invalid-feedback"> Format email tidak valid </div>
+                            <small id="emailHelp1" class="form-text text-muted">Kami tidak akan menyebar luaskan email anda kepada siapa pun.</small>
+                          </div>
+                          <div class="col-md-4 mb-3">
+                            <label for="custom-phone">Nomor Telpon</label>
+                            <input name="telp" class="form-control input-phoneus" id="custom-phone" maxlength="14" required>
+                            <div class="invalid-feedback"> Tidak boleh kosong </div>
+                          </div>
+                        </div> 
+                        <div class="form-group mb-3">
+                          <label for="address-wpalaceholder">Alamat Rumah</label>
+                          <input name="address" type="text" id="address-wpalaceholder" class="form-control" required>
+                          <div class="valid-feedback"> Disetujui! </div>
+                          <div class="invalid-feedback"> Tidak boleh kosong </div>
+                        </div>
+                        <div class="form-group mb-3">
+                          <label for="address-wpalaceholder">Tempat Tanggal Lahir</label>
+                            <input name="ttl" type="text" id="address-wpalaceholder" class="form-control" required>
+                          <div class="valid-feedback"> Disetujui! </div>
+                          <div class="invalid-feedback"> Tidak boleh kosong </div>
+                        </div>
+                        <div class="form-row">
+                          <div class="col-md-6 mb-3">
+                            <label for="validationCustom33">Facebook</label>
+                            <input name="fb" type="text" class="form-control" id="validationCustom33">
+                            <div class="invalid-feedback"> Tidak boleh kosong. </div>
+                          </div>
+                          <div class="col-md-6 mb-3">
+                            <label for="validationCustom33">Instagram</label>
+                            <input name="ig" type="text" class="form-control" id="validationCustom33">
+                            <div class="invalid-feedback"> Tidak boleh kosong. </div>
+                          </div>
+                        </div>
+                        
+                        <div class="form-group mb-3">
+                          <label for="validationTextarea1">Hobi & Minat</label>
+                          <textarea name="minat" class="form-control" id="validationTextarea1" placeholder="Take a note here" rows="3"></textarea>
+                          <div class="invalid-feedback"> Tidak boleh kosong </div>
+                        </div>
+                        <div class="form-group mb-3">
+                          <label for="validationTextarea1">Prestasi</label>
+                          <textarea name="Prestasi" class="form-control" id="validationTextarea1" placeholder="Take a note here" rows="3"></textarea>
+                        </div>
+                        <div class="form-row">
+                          <div class="col-md-6 mb-3">
+                            <label for="validationCustom33">Nama Ayah</label>
+                            <input name="nmayah" type="text" class="form-control" id="validationCustom33" required>
+                            <div class="invalid-feedback"> Tidak boleh kosong. </div>
+                          </div>
+                          <div class="col-md-6 mb-3">
+                            <label for="validationCustom33">Nama Ibu</label>
+                            <input name="nmibu" type="text" class="form-control" id="validationCustom33" required>
+                            <div class="invalid-feedback"> Tidak boleh kosong. </div>
+                          </div>
+                        </div>
+                        <div class="form-row">
+                          <div class="col-md-4 mb-3">
+                            <label for="validationCustom33">Anak Ke-</label>
+                            <input name="anakke" type="text" class="form-control" id="validationCustom33" required>
+                            <div class="invalid-feedback"> Tidak boleh kosong. </div>
+                          </div>
+                        </div>
+                        <div class="form-row">
+                              <div class="col-md-4 mb-3">
+                                    <label for="inputState">Status Dalam Keluarga</label>
+                                    <select id="inputState5" class="form-control" name="statusanak">
+                                          <option selected>Anak Kandung</option>
+                                          <option>Anak Angkat</option>
+                                    </select>
+                              </div>
+                        </div>
+                        <div class="form-row">
+                              <div class="col-md-4 mb-3">
+                                    <label for="inputState">Kejuruan</label>
+                                    <select id="inputState5" class="form-control" name="pic_kejuruan">
+                                          <option selected disabled>Pilih Kejuruan</option>
+                                          <option value="MULTIMEDIA">MULTIMEDIA</option>
+                                          <option value="SEPEDA MOTOR">T. SEPEDA MOTOR</option>
+                                          <option value="KELISTRIKAN">KELISTRIKAN</option>
+                                          <option value="OTOMOTIF">OTOMOTIF</option>
+                                    </select>
+                              </div>
+                        </div>
+                        <br>
+                        <button class="btn btn-primary" type="submit" name="submit" value="daftar">Submit form</button>
+                      </form>
+                    </div> <!-- /.card-body -->
+                  </div> <!-- /.card -->
+                </div> <!-- /.col -->
+              </div> <!-- end section -->
+            </div> <!-- /.col-12 col-lg-10 col-xl-10 -->
+          </div> <!-- .row -->
+        </div> <!-- .container-fluid -->
+        <p class="mt-5 mb-3 text-muted mx-auto text-center my-4">© 2022</p>
+      </main> <!-- main -->
+    </div> <!-- .wrapper -->
+    <script src="<?= $this->baseUrl('js/jquery.min.js'); ?>"></script>
+    <script src="<?= $this->baseUrl('js/popper.min.js'); ?>"></script>
+    <script src="<?= $this->baseUrl('js/moment.min.js'); ?>"></script>
+    <script src="<?= $this->baseUrl('js/bootstrap.min.js'); ?>"></script>
+    <script src="<?= $this->baseUrl('js/simplebar.min.js'); ?>"></script>
+    <script src='<?= $this->baseUrl('js/daterangepicker.js'); ?>'></script>
+    <script src='<?= $this->baseUrl('js/jquery.stickOnScroll.js'); ?>'></script>
+    <script src="<?= $this->baseUrl('js/tinycolor-min.js'); ?>"></script>
+    <script src="<?= $this->baseUrl('js/config.js'); ?>"></script>
+    <script src='<?= $this->baseUrl('js/jquery.mask.min.js'); ?>'></script>
+    <script src='<?= $this->baseUrl('js/select2.min.js'); ?>'></script>
+    <script src='<?= $this->baseUrl('js/jquery.steps.min.js'); ?>'></script>
+    <script src='<?= $this->baseUrl('js/jquery.validate.min.js'); ?>'></script>
+    <script src='<?= $this->baseUrl('js/jquery.timepicker.js'); ?>'></script>
+    <script src='<?= $this->baseUrl('js/dropzone.min.js'); ?>'></script>
+    <script src='<?= $this->baseUrl('js/uppy.min.js'); ?>'></script>
+    <script src='<?= $this->baseUrl('js/quill.min.js'); ?>'></script>
+    <script>
+      $('.select2').select2(
+      {
+        theme: 'bootstrap4',
+      });
+      $('.select2-multi').select2(
+      {
+        multiple: true,
+        theme: 'bootstrap4',
+      });
+      $('.drgpicker').daterangepicker(
+      {
+        singleDatePicker: true,
+        timePicker: false,
+        showDropdowns: true,
+        locale:
+        {
+          format: 'MM/DD/YYYY'
+        }
+      });
+      $('.time-input').timepicker(
+      {
+        'scrollDefault': 'now',
+        'zindex': '9999' /* fix modal open */
+      });
+      /** date range picker */
+      if ($('.datetimes').length)
+      {
+        $('.datetimes').daterangepicker(
+        {
+          timePicker: true,
+          startDate: moment().startOf('hour'),
+          endDate: moment().startOf('hour').add(32, 'hour'),
+          locale:
+          {
+            format: 'M/DD hh:mm A'
+          }
+        });
+      }
+      var start = moment().subtract(29, 'days');
+      var end = moment();
+
+      function cb(start, end)
+      {
+        $('#reportrange span').html(start.format('MMMM D, YYYY') + ' - ' + end.format('MMMM D, YYYY'));
+      }
+      $('#reportrange').daterangepicker(
+      {
+        startDate: start,
+        endDate: end,
+        ranges:
+        {
+          'Today': [moment(), moment()],
+          'Yesterday': [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
+          'Last 7 Days': [moment().subtract(6, 'days'), moment()],
+          'Last 30 Days': [moment().subtract(29, 'days'), moment()],
+          'This Month': [moment().startOf('month'), moment().endOf('month')],
+          'Last Month': [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')]
+        }
+      }, cb);
+      cb(start, end);
+      $('.input-placeholder').mask("00/00/0000",
+      {
+        placeholder: "__/__/____"
+      });
+      $('.input-zip').mask('00000-000',
+      {
+        placeholder: "____-___"
+      });
+      $('.input-money').mask("#.##0,00",
+      {
+        reverse: true
+      });
+      $('.input-phoneus').mask('(000) 000-0000-0000');
+      $('.input-mixed').mask('AAA 000-S0S');
+      $('.input-ip').mask('0ZZ.0ZZ.0ZZ.0ZZ',
+      {
+        translation:
+        {
+          'Z':
+          {
+            pattern: /[0-9]/,
+            optional: true
+          }
+        },
+        placeholder: "___.___.___.___"
+      });
+      // editor
+      var editor = document.getElementById('editor');
+      if (editor)
+      {
+        var toolbarOptions = [
+          [
+          {
+            'font': []
+          }],
+          [
+          {
+            'header': [1, 2, 3, 4, 5, 6, false]
+          }],
+          ['bold', 'italic', 'underline', 'strike'],
+          ['blockquote', 'code-block'],
+          [
+          {
+            'header': 1
+          },
+          {
+            'header': 2
+          }],
+          [
+          {
+            'list': 'ordered'
+          },
+          {
+            'list': 'bullet'
+          }],
+          [
+          {
+            'script': 'sub'
+          },
+          {
+            'script': 'super'
+          }],
+          [
+          {
+            'indent': '-1'
+          },
+          {
+            'indent': '+1'
+          }], // outdent/indent
+          [
+          {
+            'direction': 'rtl'
+          }], // text direction
+          [
+          {
+            'color': []
+          },
+          {
+            'background': []
+          }], // dropdown with defaults from theme
+          [
+          {
+            'align': []
+          }],
+          ['clean'] // remove formatting button
+        ];
+        var quill = new Quill(editor,
+        {
+          modules:
+          {
+            toolbar: toolbarOptions
+          },
+          theme: 'snow'
+        });
+      }
+      // Example starter JavaScript for disabling form submissions if there are invalid fields
+      (function()
+      {
+        'use strict';
+        window.addEventListener('load', function()
+        {
+          // Fetch all the forms we want to apply custom Bootstrap validation styles to
+          var forms = document.getElementsByClassName('needs-validation');
+          // Loop over them and prevent submission
+          var validation = Array.prototype.filter.call(forms, function(form)
+          {
+            form.addEventListener('submit', function(event)
+            {
+              if (form.checkValidity() === false)
+              {
+                event.preventDefault();
+                event.stopPropagation();
+              }
+              form.classList.add('was-validated');
+            }, false);
+          });
+        }, false);
+      })();
+    </script>
+    <script src="<?= $this->baseUrl('js/apps.js'); ?>"></script>
+  </body>
+</html>

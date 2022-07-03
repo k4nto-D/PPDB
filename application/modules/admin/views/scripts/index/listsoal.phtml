@@ -1,0 +1,129 @@
+      <main role="main" class="main-content">
+        <div class="container-fluid">
+          <div class="row justify-content-center">
+            <div class="col-12">
+              <h2 class="page-title">Bank Soal</h2>
+              <p class="text-muted"></p>
+              <div class="card-deck">
+                <div class="card shadow mb-4">
+                  <div class="card-header">
+                    <strong class="card-title">Daftar Soal Aktif Saat Ini.</strong>
+                  </div>
+                  <div class="card-body">
+                    <form action="" method="post">
+                        <div class="form-group col-md-6">
+                          <label for="simple-select2">Simple Select</label>
+                          <select class="form-control select2" id="simple-select2" name="pic_kejuruan">
+                            
+                            <?php
+                            echo "
+                            <option value='All'>All</option>";
+                            foreach ($this->listKejuruan as $key) {
+                              echo "<option value='" . $key['kejuruan'] . "'>" . $key['kejuruan'] . "</option>";
+                            }
+                            ?>
+
+                          </select>
+                        </div>
+                      <br>
+                      <button type="submit" class="btn btn-primary" name="submit" value="listsoal">Submit</button>
+                    </form>
+                  </div>
+                </div>
+              </div> <!-- / .card-desk-->
+            </div> <!-- .col-12 -->
+          </div> <!-- .row -->
+        </div> <!-- .container-fluid -->
+
+
+        <div class="container-fluid">
+          <div class="row justify-content-center">
+            <div class="col-12">
+              <div class="row">
+                <!-- Striped rows -->
+                <div class="col-md-12 mb-12">
+                  <div class="card shadow">
+                    <div class="card-body">
+                      <div class="row align-items-center">
+                        <div class="col">
+                          <span class="h2 mb-0">Kejuruan : <?=$this->param;?></span>
+                          <p class="small text-muted mb-0">Orders</p>
+                          <span class="badge badge-pill badge-success"><br>Total Soal <?= count($this->list_soal);?></span>
+                        </div>
+                        <div class="col-auto">
+                          <span class="fe fe-32 fe-clipboard text-muted mb-0"></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-12 my-4">
+                  <div class="card shadow">
+                    <div class="card-body">
+
+                      <!-- table -->
+                      <table class="table table-hover table-borderless">
+                        <thead>
+                          <tr role="row">
+                            <th style="text-align:center" colspan="3">Soal</th>
+                            <th style="text-align:center" colspan="4">Jawaban</th>
+                            <!-- <th colspan="3"></th> -->
+                          </tr>
+                          <tr role="row">
+                            <th>No</th>
+                            <th>Kejuruan</th>
+                            <th>Kode Soal</th>
+                            <th>Soal</th>
+                            <th>Jawaban</th>
+                            <th>Kunci Jawaban</th>
+                          </tr>
+                        </thead>
+
+                        <?php
+                        if (is_array($this->list_soal)) {
+
+                          foreach ($this->list_soal as $key) {
+                              echo "<tbody>";
+                                echo "<tr>";
+                                  echo "<td>" . $key['no_soal'] . "</td>";
+                                  echo "<td>" . $key['kejuruan'] . "</td>";
+                                  echo "<td>" . $key['kd_soal'] . "</td>";
+                                  echo "<td>" . $key['soal'] . "</td>";
+                                  echo "<td><button class='btn btn-sm dropdown-toggle more-horizontal' type='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false'>
+                                        <span class='text-muted sr-only'>Action</span>
+                                      </button>
+                                      <div class='dropdown-menu dropdown-menu-right'>
+                                        <a class='dropdown-item' href='#'>A. " . $key['jawaban_a'] . "</a>
+                                        <a class='dropdown-item' href='#'>B. " . $key['jawaban_b'] . "</a>
+                                        <a class='dropdown-item' href='#'>C. " . $key['jawaban_c'] . "</a>
+                                        <a class='dropdown-item' href='#'>D. " . $key['jawaban_d'] . "</a>
+                                        <a class='dropdown-item' href='#'>E. " . $key['jawaban_e'] . "</a>
+                                      </div>
+                                    </td>";
+                                  echo "<td><span class='text-success'>" . strtoupper($key['kunci_jwb']) . "</span></td>";
+                                echo "</tr>";                        
+                              echo "</tbody>";
+                          }
+                          
+                          
+                        }
+                        ?>
+                        
+                      </table>
+                      <!-- <nav aria-label="Table Paging" class="mb-0 text-muted">
+                        <ul class="pagination justify-content-end mb-0">
+                          <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                          <li class="page-item"><a class="page-link" href="#">1</a></li>
+                          <li class="page-item"><a class="page-link" href="#">2</a></li>
+                          <li class="page-item"><a class="page-link" href="#">3</a></li>
+                          <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                        </ul>
+                      </nav> -->
+                    </div>
+                  </div>
+                </div> <!-- simple table -->
+              </div> <!-- end section -->
+            </div> <!-- .col-12 -->
+          </div> <!-- .row -->
+        </div> <!-- .container-fluid -->

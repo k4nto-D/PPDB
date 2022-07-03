@@ -1,0 +1,18 @@
+<?php
+      // memanggil dan membaca template dokumen
+      $document = file_get_contents("media/REKOMENDASICERTIFICATE.rtf");
+
+      // insert variable ke file rtf
+      $document     = str_replace("#NAMALENGKAP", $this->nama, $document);
+      $document     = str_replace("#ASALSEKOLAH", $this->asalsekolah, $document);
+      $document     = str_replace("#KODETEST", $this->kd_casis, $document);
+      $document     = str_replace("#PICKHERO", $this->jurusan_pic, $document);
+      $document     = str_replace("#JURUSAN", $this->rekomendasi, $document);
+
+      // header untuk membuka file output RTF dengan MS. Word
+      header("Content-type: application/msword");
+      header("Content-disposition: inline; filename=".$this->outname);
+      header("Content-length: ".strlen($document));
+      echo $document;
+
+?>

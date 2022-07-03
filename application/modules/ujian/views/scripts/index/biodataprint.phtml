@@ -1,0 +1,347 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="favicon.ico">
+    <title>PPDB - YAPPIKA</title>
+    <!-- Simple bar CSS -->
+    <link rel="stylesheet" href="<?= $this->baseUrl('css/simplebar.css'); ?>">
+    <!-- Fonts CSS -->
+    <link href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- Icons CSS -->
+    <link rel="stylesheet" href="<?= $this->baseUrl('css/feather.css'); ?>">
+    <link rel="stylesheet" href="<?= $this->baseUrl('css/select2.css'); ?>">
+    <link rel="stylesheet" href="<?= $this->baseUrl('css/dropzone.css'); ?>">
+    <link rel="stylesheet" href="<?= $this->baseUrl('css/uppy.min.css'); ?>">
+    <link rel="stylesheet" href="<?= $this->baseUrl('css/jquery.steps.css'); ?>">
+    <link rel="stylesheet" href="<?= $this->baseUrl('css/jquery.timepicker.css'); ?>">
+    <link rel="stylesheet" href="<?= $this->baseUrl('css/quill.snow.css'); ?>">
+    <!-- Date Range Picker CSS -->
+    <link rel="stylesheet" href="<?= $this->baseUrl('css/daterangepicker.css'); ?>">
+    <!-- App CSS -->
+    <link rel="stylesheet" href="<?= $this->baseUrl('css/app-light.css'); ?>" id="lightTheme">
+    <link rel="stylesheet" href="<?= $this->baseUrl('css/app-dark.css'); ?>" id="darkTheme" disabled>
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.js"></script>
+  </head>
+  <body class="vertical  light  ">
+    <div class="wrapper">
+
+      <nav class="topnav navbar navbar-light">
+        <ul class="nav">
+          <li class="nav-item">
+            <a class="nav-link text-muted my-2" href="#" id="modeSwitcher" data-mode="light" title="DARK / LIGHT Mode">
+              <i class="fe fe-sun fe-16"></i>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <aside class="sidebar-left border-right bg-white shadow" id="leftSidebar" data-simplebar>
+        <a href="#" class="btn collapseSidebar toggle-btn d-lg-none text-muted ml-2 mt-3" data-toggle="toggle">
+          <i class="fe fe-x"><span class="sr-only"></span></i>
+        </a>
+        <nav class="vertnav navbar navbar-light">
+<!--* NAVBAR --->
+         <div class="w-100 mb-4 d-flex">
+            <img src="<?= $this->baseUrl('media/logosekolah.jpeg')?>" alt="SMK YAPPIKA" width="25" heigh="25" class="navbar-brand md-auto mt-2 flex-fill text-center">
+          </div>
+          <p class="navbar-brand mx-auto mt-2 flex-fill text-center">SMK YAPPIKA LEGOK</p>
+
+          <ul class="navbar-nav flex-fill w-100 mb-2">
+            <li class="nav-item w-100">
+              <a class="nav-link" href="#">
+                <i class="fe fe-user-check fe-16"></i>
+                <span class="ml-3 item-text">Biodata</span>
+              </a>
+            </li>
+            <li class="nav-item w-100">
+              <a class="nav-link" href="../index/logout">
+                <i class="fe fe-log-out fe-16"></i>
+                <span class="ml-3 item-text">Keluar Ujian</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </aside> 
+
+
+      <div id="canvas">   
+            <main role="main" class="main-content">
+            <div class="container-fluid">
+            <div class="row justify-content-center">
+                  <!-- <canvas width="1200"></canvas> -->
+                  <div class="col-12">
+                  <h2 class="page-title text-center"> </h2><hr>
+                  <p class="text-muted">PERIKSA KEMBALI BIODATA ANDA</p>
+                  <div class="row">
+                  <div class="col-md-12">
+                        <div class="card shadow mb-4">
+                        <div class="card-header">
+                        <strong class="card-title"></strong>
+                        </div>
+                        <div class="card-body">
+                              
+                        <form>
+                        <div class="form-group row">
+                              <label for="disabledInput" class="col-sm-3 col-form-label">NAMA LENGKAP</label>
+                              <div class="col-sm-9">
+                              <input type="text" class="form-control" id="disabledInput" placeholder="NAMA LENGKAP" value="<?= $this->nama_peserta; ?>" disabled>
+                              </div>
+                        </div>
+                        <div class="form-group row">
+                              <label for="disabledInput" class="col-sm-3 col-form-label">ASAL SEKOLAH</label>
+                              <div class="col-sm-9">
+                              <input type="text" class="form-control" id="disabledInput" placeholder="ASAL SEKOLAH" value="<?= $this->asal_sekolah; ?>" disabled>
+                              </div>
+                        </div>
+                        <div class="form-group row">
+                              <label for="disabledInput" class="col-sm-3 col-form-label">JURUSAN YANG DIPILIH</label>
+                              <div class="col-sm-9">
+                              <input type="text" class="form-control" id="disabledInput" placeholder="ASAL SEKOLAH" value="<?= $this->kejuruan_pic;?>" disabled>
+                              </div>
+                        </div>
+                        <div class="form-group row">
+                              <label for="disabledInput" class="col-sm-3 col-form-label">JURUSAN YANG DIREKOMENDASIKAN</label>
+                              <div class="col-sm-9">
+                              <input class="form-control" id="disabledInput" type="text" value="<?php foreach($this->recomend_jur as $rc){
+                                                                                                  echo $rc['kejuruan'] . ", ";
+                                                                                                }
+                                                                                                ?>" disabled>
+                              </div>
+                        </div>
+                        <br><br>
+                        <p><i>SILAHKAN CETAK ATAU DOWNLOAD HASIL TEST PENERIMAAN PESERTA DIDIK BARU.<br>TUNJUKAN BUKTI TEST INI UNTUK MEMPEROLEH FORMULIR PENDAFTARAN DI SMK YAPPIKA LEGOK</i></p>
+                        <button type="button" class="btn btn-secondary">
+                          <?php
+                                $this->urlxls = $this->url(array(
+                                      'module' => Zend_Controller_Front::getInstance()->getRequest()->getModuleName(),
+                                      'controller' => Zend_Controller_Front::getInstance()->getRequest()->getControllerName(),
+                                      'action' => 'generatehasil',
+                                      'params'=>json_encode($this->filename)
+                                ), null, true);
+                          ?>
+                          <a href='<?=$this->urlxls;?>' style='color:blue' title="klik untuk download BA">
+                          <icon class='fa fa-fw fa-file-excel-o'></icon> Print 
+                          </a>
+                        </button>
+                      </form>
+                      </div> <!-- /.card-body -->
+                    </div> <!-- /.card -->
+                  </div> <!-- /.col -->
+                  </div> <!-- end section -->
+                  </div> <!-- /.col-12 col-lg-10 col-xl-10 -->
+            </div> <!-- .row -->
+            </div> <!-- .container-fluid -->
+            <p class="mt-5 mb-3 text-muted mx-auto text-center my-4">© 2022</p>
+            </main> <!-- main -->
+      </div>
+    </div> <!-- .wrapper -->
+    <script src="<?= $this->baseUrl('js/jquery.min.js'); ?>"></script>
+    <script src="<?= $this->baseUrl('js/popper.min.js'); ?>"></script>
+    <script src="<?= $this->baseUrl('js/moment.min.js'); ?>"></script>
+    <script src="<?= $this->baseUrl('js/bootstrap.min.js'); ?>"></script>
+    <script src="<?= $this->baseUrl('js/simplebar.min.js'); ?>"></script>
+    <script src='<?= $this->baseUrl('js/daterangepicker.js'); ?>'></script>
+    <script src='<?= $this->baseUrl('js/jquery.stickOnScroll.js'); ?>'></script>
+    <script src="<?= $this->baseUrl('js/tinycolor-min.js'); ?>"></script>
+    <script src="<?= $this->baseUrl('js/config.js'); ?>"></script>
+    <script src='<?= $this->baseUrl('js/jquery.mask.min.js'); ?>'></script>
+    <script src='<?= $this->baseUrl('js/select2.min.js'); ?>'></script>
+    <script src='<?= $this->baseUrl('js/jquery.steps.min.js'); ?>'></script>
+    <script src='<?= $this->baseUrl('js/jquery.validate.min.js'); ?>'></script>
+    <script src='<?= $this->baseUrl('js/jquery.timepicker.js'); ?>'></script>
+    <script src='<?= $this->baseUrl('js/dropzone.min.js'); ?>'></script>
+    <script src='<?= $this->baseUrl('js/uppy.min.js'); ?>'></script>
+    <script src='<?= $this->baseUrl('js/quill.min.js'); ?>'></script>
+    
+    <script src="<?= $this->baseUrl('assets/jsPDF-1.3.2/jspdf.min.js')?>"></script>
+    <script src="<?= $this->baseUrl('js/downloadhasiltest.js')?>"></script>
+    
+    
+    
+    <script>
+      $('.select2').select2(
+      {
+        theme: 'bootstrap4',
+      });
+      $('.select2-multi').select2(
+      {
+        multiple: true,
+        theme: 'bootstrap4',
+      });
+      $('.drgpicker').daterangepicker(
+      {
+        singleDatePicker: true,
+        timePicker: false,
+        showDropdowns: true,
+        locale:
+        {
+          format: 'MM/DD/YYYY'
+        }
+      });
+      $('.time-input').timepicker(
+      {
+        'scrollDefault': 'now',
+        'zindex': '9999' /* fix modal open */
+      });
+      /** date range picker */
+      if ($('.datetimes').length)
+      {
+        $('.datetimes').daterangepicker(
+        {
+          timePicker: true,
+          startDate: moment().startOf('hour'),
+          endDate: moment().startOf('hour').add(32, 'hour'),
+          locale:
+          {
+            format: 'M/DD hh:mm A'
+          }
+        });
+      }
+      var start = moment().subtract(29, 'days');
+      var end = moment();
+
+      function cb(start, end)
+      {
+        $('#reportrange span').html(start.format('MMMM D, YYYY') + ' - ' + end.format('MMMM D, YYYY'));
+      }
+      $('#reportrange').daterangepicker(
+      {
+        startDate: start,
+        endDate: end,
+        ranges:
+        {
+          'Today': [moment(), moment()],
+          'Yesterday': [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
+          'Last 7 Days': [moment().subtract(6, 'days'), moment()],
+          'Last 30 Days': [moment().subtract(29, 'days'), moment()],
+          'This Month': [moment().startOf('month'), moment().endOf('month')],
+          'Last Month': [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')]
+        }
+      }, cb);
+      cb(start, end);
+      $('.input-placeholder').mask("00/00/0000",
+      {
+        placeholder: "__/__/____"
+      });
+      $('.input-zip').mask('00000-000',
+      {
+        placeholder: "____-___"
+      });
+      $('.input-money').mask("#.##0,00",
+      {
+        reverse: true
+      });
+      $('.input-phoneus').mask('(000) 000-0000');
+      $('.input-mixed').mask('AAA 000-S0S');
+      $('.input-ip').mask('0ZZ.0ZZ.0ZZ.0ZZ',
+      {
+        translation:
+        {
+          'Z':
+          {
+            pattern: /[0-9]/,
+            optional: true
+          }
+        },
+        placeholder: "___.___.___.___"
+      });
+      // editor
+      var editor = document.getElementById('editor');
+      if (editor)
+      {
+        var toolbarOptions = [
+          [
+          {
+            'font': []
+          }],
+          [
+          {
+            'header': [1, 2, 3, 4, 5, 6, false]
+          }],
+          ['bold', 'italic', 'underline', 'strike'],
+          ['blockquote', 'code-block'],
+          [
+          {
+            'header': 1
+          },
+          {
+            'header': 2
+          }],
+          [
+          {
+            'list': 'ordered'
+          },
+          {
+            'list': 'bullet'
+          }],
+          [
+          {
+            'script': 'sub'
+          },
+          {
+            'script': 'super'
+          }],
+          [
+          {
+            'indent': '-1'
+          },
+          {
+            'indent': '+1'
+          }], // outdent/indent
+          [
+          {
+            'direction': 'rtl'
+          }], // text direction
+          [
+          {
+            'color': []
+          },
+          {
+            'background': []
+          }], // dropdown with defaults from theme
+          [
+          {
+            'align': []
+          }],
+          ['clean'] // remove formatting button
+        ];
+        var quill = new Quill(editor,
+        {
+          modules:
+          {
+            toolbar: toolbarOptions
+          },
+          theme: 'snow'
+        });
+      }
+      // Example starter JavaScript for disabling form submissions if there are invalid fields
+      (function()
+      {
+        'use strict';
+        window.addEventListener('load', function()
+        {
+          // Fetch all the forms we want to apply custom Bootstrap validation styles to
+          var forms = document.getElementsByClassName('needs-validation');
+          // Loop over them and prevent submission
+          var validation = Array.prototype.filter.call(forms, function(form)
+          {
+            form.addEventListener('submit', function(event)
+            {
+              if (form.checkValidity() === false)
+              {
+                event.preventDefault();
+                event.stopPropagation();
+              }
+              form.classList.add('was-validated');
+            }, false);
+          });
+        }, false);
+      })();
+    </script>
+    <script src="<?= $this->baseUrl('js/apps.js'); ?>"></script>
+  </body>
+</html>

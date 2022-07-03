@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="favicon.ico">
+    <title>PPDB - YAPPIKA</title>
+    <!-- Simple bar CSS -->
+    <link rel="stylesheet" href=<?= $this->baseUrl('"css/simplebar.css'); ?>">
+    <!-- Fonts CSS -->
+    <link href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- Icons CSS -->
+    <link rel="stylesheet" href="<?= $this->baseUrl('css/feather.css'); ?>">
+    <!-- Date Range Picker CSS -->
+    <link rel="stylesheet" href="<?= $this->baseUrl('css/daterangepicker.css'); ?>">
+    <!-- App CSS -->
+    <link rel="stylesheet" href="<?= $this->baseUrl('css/app-light.css'); ?>" id="lightTheme">
+    <link rel="stylesheet" href="<?= $this->baseUrl('css/app-dark.css'); ?>" id="darkTheme" disabled>
+  </head>
+  <body class="vertical  light  ">
+    <div class="wrapper">
+
+      <nav class="topnav navbar navbar-light">
+        <ul class="nav">
+          <li class="nav-item">
+            <a class="nav-link text-muted my-2" href="#" id="modeSwitcher" data-mode="light" title="DARK / LIGHT Mode">
+              <i class="fe fe-sun fe-16"></i>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <aside class="sidebar-left border-right bg-white shadow" id="leftSidebar" data-simplebar>
+        <a href="#" class="btn collapseSidebar toggle-btn d-lg-none text-muted ml-2 mt-3" data-toggle="toggle">
+          <i class="fe fe-x"><span class="sr-only"></span></i>
+        </a>
+        <nav class="vertnav navbar navbar-light">
+         <div class="w-100 mb-4 d-flex">
+            <img src="<?= $this->baseUrl('media/logosekolah.jpeg')?>" alt="SMK YAPPIKA" width="25" heigh="25" class="navbar-brand md-auto mt-2 flex-fill text-center">
+          </div>
+          <p class="navbar-brand mx-auto mt-2 flex-fill text-center">SMK YAPPIKA LEGOK</p>
+          <p class="text-muted nav-heading mt-4 mb-1">
+            <span>Administrator</span>
+          </p>
+          <ul class="navbar-nav flex-fill w-100 mb-2">
+            <li class="nav-item dropdown">
+              <a href="#ui-elements" data-toggle="collapse" aria-expanded="true" class="dropdown-toggle nav-link">
+                <i class="fe fe-folder fe-16"></i>
+                <span class="ml-3 item-text">Bank Soal</span>
+              </a>
+              <ul class="collapse list-unstyled pl-4 w-100" id="ui-elements">
+                <li class="nav-item">
+                  <a class="nav-link pl-3" href="./updatesoal"><span class="ml-1 item-text">Unggah Soal</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link pl-3" href="./listsoal"><span class="ml-1 item-text">List Soal</span></a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a href="#tables" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle nav-link">
+                <i class="fe fe-user fe-16"></i>
+                <span class="ml-3 item-text">Profile</span>
+              </a>
+              <ul class="collapse list-unstyled pl-4 w-100" id="tables">
+                <li class="nav-item">
+                  <a class="nav-link pl-3" href="./updatepass"><span class="ml-1 item-text">Ubah Password</span></a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <div class="btn-box w-100 mt-4 mb-1">
+            <form action="" method="post">
+              <button name="submit" value="logout" type="submit" class="btn mb-2 btn-primary btn-lg btn-block">
+                <span class="small">Sign Out</span>
+              </button>
+            </form>
+          </div>
+        </nav>
+      </aside> 
+      
+      
+      <?=$this->layout()->content; ?>
+
+
+
+    
+      <p class="mt-5 mb-3 text-muted mx-auto text-center my-4">© 2022</p>
+      </main> <!-- main -->
+    </div> <!-- .wrapper -->
+    
+    <script src="<?= $this->baseUrl('js/jquery.min.js'); ?>"></script>
+    <script src="<?= $this->baseUrl('js/popper.min.js'); ?>"></script>
+    <script src="<?= $this->baseUrl('js/moment.min.js'); ?>"></script>
+    <script src="<?= $this->baseUrl('js/bootstrap.min.js'); ?>"></script>
+    <script src="<?= $this->baseUrl('js/simplebar.min.js'); ?>"></script>
+    <script src='<?= $this->baseUrl('js/daterangepicker.js'); ?>'></script>
+    <script src='<?= $this->baseUrl('js/jquery.stickOnScroll.js'); ?>'></script>
+    <script src="<?= $this->baseUrl('js/tinycolor-min.js'); ?>"></script>
+    <script src="<?= $this->baseUrl('js/config.js'); ?>"></script>
+    <script src="<?= $this->baseUrl('js/apps.js'); ?>"></script>
+  </body>
+</html>
