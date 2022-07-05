@@ -194,24 +194,32 @@ class Ujian_IndexController extends Zend_Controller_Action
     public function reportingAction()
     {
         $request = $this->getRequest();
-
-        // $this->view->rekomendasi = Ujian_Model_Aps::get_ranking($_SESSION['kd_casis'], 'jurusan');
-        $this->view->rekomendasi = Ujian_Model_Aps::kirim_hasil_test_profil($_SESSION['kd_casis']);
-        $this->view->kejuruan_pic= Ujian_Model_Aps::get_ranking($_SESSION['kd_casis'], 'jurusanpic');
-        $this->view->reporting   = Ujian_Model_Aps::lst_kejuruan('reporting');
+        
+        $nilai                      = Ujian_Model_Aps::get_hasil_test_profil($_SESSION['kd_casis']);        
+        $this->view->kejuruan_pic   = Ujian_Model_Aps::get_ranking($_SESSION['kd_casis'], 'jurusanpic');
+        $this->view->reporting      = Ujian_Model_Aps::lst_kejuruan('reporting');
+        
+        if ($nilai[0]['points'] == 0.0000000000000000) {
+        
+            $this->view->rekomendasi    = [];
+            $this->view->rekomendasix   = 'TIDAK DI REKOMENDASIKAN JURUSAN';
+        
+        } else {
+            $this->view->rekomendasi =  Ujian_Model_Aps::kirim_hasil_test_profil($_SESSION['kd_casis'], $nilai[0]['points']);
+        }
 
         if ($request->getPost('submit') == 'next') {
             $this->_helper->_redirector('biodataprint','index','ujian');
-        }
+        }   
     }
 
     public function biodataprintAction()
     {
         $this->_helper->layout()->disableLayout();
         $request = $this->getRequest();
-
-        // $rekomendasi_jurusan    = Ujian_Model_Aps::get_ranking($_SESSION['kd_casis'], 'jurusan');
-        $rekomendasi_jurusan    = Ujian_Model_Aps::kirim_hasil_test_profil($_SESSION['kd_casis']);
+        
+        $nilai                  = Ujian_Model_Aps::get_hasil_test_profil($_SESSION['kd_casis']);
+        $rekomendasi_jurusan    = Ujian_Model_Aps::kirim_hasil_test_profil($_SESSION['kd_casis'], $nilai[0]['points']);
         $pic_kejuruan           = Ujian_Model_Aps::get_ranking($_SESSION['kd_casis'], 'jurusanpic');
 
         $this->view->nama_peserta = $_SESSION['nama'];
@@ -219,14 +227,29 @@ class Ujian_IndexController extends Zend_Controller_Action
         $this->view->recomend_jur = $rekomendasi_jurusan;
         $this->view->kejuruan_pic = $pic_kejuruan;
 
-        // var_dump($pic_kejuruan);
-
         
+        $rekomendasi_jurusanx = [];
 
-        /* param utk link download file */
+        if ($nilai[0]['points'] == 0.0000000000000000) {
+        
+            $this->view->recomend_jur    = [];
+            $this->view->recomend_jurx   = 'TIDAK DI REKOMENDASIKAN JURUSAN';
+
+            array_push($rekomendasi_jurusanx, 'TIDAK DI REKOMENDASIKAN JURUSAN');
+        
+        } else {
+            $this->view->recomend_jur =  Ujian_Model_Aps::kirim_hasil_test_profil($_SESSION['kd_casis'], $nilai[0]['points']);
+
+            foreach($rekomendasi_jurusan as $rc){
+
+                $kejuruanx = $rc['kejuruan'] . ", ";
+                array_push($rekomendasi_jurusanx, $kejuruanx);
+            }
+        }
+
         $param = array(
             'namafile' => base64_encode("printout"),
-            'rekomendasi' => base64_encode($rekomendasi_jurusan),
+            'rekomendasi' => base64_encode(implode($rekomendasi_jurusanx)),
             'jurusan_pic' => base64_encode($pic_kejuruan),
             'kd_casis'  => base64_encode($_SESSION['kd_casis']),
             'asalsekolah' => base64_encode($_SESSION['asalsekolah']),

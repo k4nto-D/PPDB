@@ -104,10 +104,21 @@
 
 		}
 
-		public static function kirim_hasil_test_profil($kd_siswa)
+		public static function get_hasil_test_profil($kd_siswa)
 		{
 			$db = Ujian_Model_Aps::InitDb();
-			$sql = 'call `2022_sinkron_data_casis`("'. $kd_siswa .'")';
+			
+			$sql = 'SELECT MAX(alternatif) AS points 
+				FROM ranking_modal WHERE kd_siswa= "'. $kd_siswa .'"';
+			
+			return $db->fetchAll($sql);
+		}
+
+		public static function kirim_hasil_test_profil($kd_siswa, $nilai)
+		{
+			$db = Ujian_Model_Aps::InitDb();
+			$sql = 'SELECT kejuruan
+				FROM ranking_modal WHERE kd_siswa= "'. $kd_siswa .'" AND alternatif= "'. $nilai .'"';
 			
 			return $db->fetchAll($sql);
 		}

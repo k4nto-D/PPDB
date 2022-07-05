@@ -5,9 +5,9 @@ class Admin_AdminpgController extends Zend_Controller_Action
 
     public function init()
     {
-        // Zend_Session::start();        
+        Zend_Session::start();        
         
-        // self::checksession($_SESSION['nmadmin']);
+        self::checksession($_SESSION['nmadmin']);
         
     }
 

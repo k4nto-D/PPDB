@@ -61,10 +61,14 @@
                 <br><hr><br>
                 <h5 class="my-1"><i>ANDA DISARANKAN UNTUK MEMILIH JURUSAN :</i></h5>
                 <br>
-                <h1><b><u><?php 
-                          foreach($this->rekomendasi as $rc){
-                            echo $rc['kejuruan'] . ", ";
-                          } ?></u></b></h1><small>(Tidak Wajib)</small>
+                <h1><b><u>
+                  <?php 
+                    foreach($this->rekomendasi as $rc){
+                      echo $rc['kejuruan'] . ", ";
+                    }
+                    echo $this->rekomendasix; 
+                  ?>
+                </u></b></h1><small>(Tidak Wajib)</small>
                 <br>
           </div>
           <button class="btn btn-lg btn-danger btn-block" type="submit" name="submit" value="next">Klik Untuk Melanjutkan</button>

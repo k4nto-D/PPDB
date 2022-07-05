@@ -106,10 +106,13 @@
                         <div class="form-group row">
                               <label for="disabledInput" class="col-sm-3 col-form-label">JURUSAN YANG DIREKOMENDASIKAN</label>
                               <div class="col-sm-9">
-                              <input class="form-control" id="disabledInput" type="text" value="<?php foreach($this->recomend_jur as $rc){
+                              <input class="form-control" id="disabledInput" type="text" value="<?php 
+                                                                                                foreach($this->recomend_jur as $rc){
                                                                                                   echo $rc['kejuruan'] . ", ";
                                                                                                 }
-                                                                                                ?>" disabled>
+                                                                                                echo $this->recomend_jurx; 
+                                                                                                ?>" 
+                                                                                                disabled>
                               </div>
                         </div>
                         <br><br>
