@@ -38,6 +38,7 @@
                       <th>Jawaban Benar</th>
                       <th>Jawaban Salah</th>
                       <th>Nilai</th>
+                      <th>Nilai Alternatif Ranking</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -47,7 +48,8 @@
                                 <th scope='col'><i class='fe fe-edit-3 fe-12 text-muted mr-2'></i>" . $key['list_jurusan'] . "</th>
                                 <td>" . $key['jwb_benar'] . "</td>
                                 <td>" . $key['jwb_salah'] . "</td>
-                                <td>" . $key['total_nilai'] . "</td>
+                                <td><b>" . $key['total_nilai'] . "</b></td>
+                                <td>" . $key['alternatif'] . "</td>
                               </tr>";
                       }
                     ?>

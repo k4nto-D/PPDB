@@ -172,13 +172,16 @@
 
 			if ('reporting' == $param) {
 				$sql = 'SELECT a.kejuruan AS list_jurusan, SUM(a.points) AS jwb_benar, (SUM(a.points) - 6) AS jwb_salah, 
-						SUM(a.`points` * b.kriteria) AS total_nilai
+						SUM(a.`points` * b.kriteria) AS total_nilai,
+						c.alternatif as alternatif
 						FROM `nilai_points` a
 						JOIN `mst_bobot` b
 							ON a.`no_soal`=b.`no_soal`
-						WHERE a.kd_siswa="' . $_SESSION['kd_casis'] . '" 
-						GROUP BY a.kejuruan
-					';
+						INNER JOIN ranking_modal c
+							ON a.kd_siswa=c.kd_siswa
+						WHERE a.kd_siswa="' . $_SESSION['kd_casis'] . '"  AND a.kejuruan=c.kejuruan
+						GROUP BY a.kejuruan, c.alternatif
+						';
 			} else {
 				$sql = 'select kejuruan from mst_soal; ';
 			}
